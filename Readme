@@ -1,0 +1,139 @@
+Warehouse Management System (WMS)
+
+Description
+
+The Warehouse Management System (WMS) is a Python-based inventory management system that provides:
+
+A GUI for managing inventory (Tkinter)
+
+A REST API for external integration (Flask)
+
+Unit testing for validation (unittest)
+
+SQLite database support
+
+This project allows users to add, edit, and remove products from an inventory system while maintaining a structured database.
+
+Features
+
+GUI-based inventory management (Tkinter)
+
+REST API to fetch inventory details (Flask)
+
+Unit testing for validation (Python unittest framework)
+
+SQLite database for persistent storage
+
+CRUD operations (Create, Read, Update, Delete products)
+
+Docker support (optional)
+
+Project Structure
+
+Warehouse-Management-System  
+ ├── src  
+ │   ├── Final_Source_Code.py  # Main Python GUI file  
+ │   ├── fin_api.py  # Flask API for inventory  
+ │   ├── warehouse_test.py  # Unit test script  
+ │   ├── warehouse.jpg  # Background image for GUI  
+ │   ├── README.md  # Project description  
+ │  
+ ├── database  
+ │   ├── inventory.db  # Database file  
+ │   ├── schema.sql  # Optional SQL schema for DB setup  
+ │  
+ ├── docs  
+ │   ├── CA2_Final.pdf  # Project report  
+ │   ├── API_DOC.md  # API documentation  
+ │  
+ ├── screenshots  
+ │   ├── unit_testing.jpg  
+ │   ├── API_report.jpg  
+ │   ├── add_product.jpg  
+ │   ├── edit_product.jpg  
+ │   ├── warehouse_gui.jpg  
+ │  
+ ├── .gitignore  # Prevents unnecessary files from being pushed  
+ ├── LICENSE  # Optional open-source license  
+ ├── requirements.txt  # Dependencies (Flask, SQLite, Pillow, etc.)  
+ ├── README.md  # Main project overview  
+
+Installation and Setup
+
+Clone the Repository
+
+git clone https://github.com/yourusername/Warehouse-Management-System.git  
+cd Warehouse-Management-System  
+
+Install Dependencies
+
+pip install -r requirements.txt  
+
+Run the Flask API
+
+python src/fin_api.py  
+
+API Endpoint:
+
+http://127.0.0.1:5000/inventory  
+
+Run the GUI
+
+python src/Final_Source_Code.py  
+
+
+Example API Response:
+
+[
+  {
+    "description": "Made in India",
+    "location": "Cork",
+    "name": "Mango",
+    "product_id": 12,
+    "quantity": 301,
+    "stage": "Pack Unloading Area"
+  }
+]
+
+Running Unit Tests
+
+To validate functionality, run:
+
+python src/warehouse_test.py  
+
+Screenshots
+
+GUI: Warehouse Inventory System
+
+
+
+Unit Testing Output
+
+
+
+API Response (JSON)
+
+
+
+Future Enhancements
+
+Implement user authentication for admin roles
+
+Add Docker support for easy deployment
+
+Integrate with cloud storage (AWS S3, Google Drive)
+
+Develop real-time inventory tracking with IoT sensors
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contributing
+
+Feel free to fork this repo, raise issues, or submit pull requests for improvements.
+
+Contact
+
+For any issues, reach out via LinkedIn or open a GitHub issue.
+
